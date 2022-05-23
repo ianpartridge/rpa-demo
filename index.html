@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Acme Inc. Employee Data Management System</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="demo.js"></script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <h1>Acme Inc.</h1>
+      <h2>Employee Data Management System</h2>
+    </div>
+
+    <form>
+      <div class="row">
+        <div class="six columns">
+          <label for="employeeIdInput">Employee ID</label>
+          <input class="u-full-width" type="number" placeholder="00000000" id="employeeIdInput">
+        </div>
+        <div class="six columns">
+          <label for="employeeTypeInput">Employee type</label>
+          <select class="u-full-width" id="employeeTypeInput">
+            <option value="Option 1">Permanent, full-time</option>
+            <option value="Option 2">Permanent, part-time</option>
+            <option value="Option 3">Contractor</option>
+          </select>
+        </div>
+      </div>
+      <input class="button-primary" type="button" value="Search" onclick="doResults()">
+    </form>
+
+    <div id="resultsDiv" style="display: none">
+      <div class="row">
+        <h3>Result</h3>
+      </div>
+      <div class="row">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Employee ID</th>
+              <th>Hours worked</th>
+              <th>Hours saved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="employeeId"></td>
+              <td id="hoursWorked"></td>
+              <td id="hoursSaved"></td>
+            </tr>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      
+    </div>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
