@@ -34,27 +34,19 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <h1>Acme Inc.</h1>
+    <div class="row" style="text-align: center">
+      <img src="images/acme.png" alt="Acme Inc. logo" />
       <h2>Employee Data Management System</h2>
     </div>
 
     <form>
-      <div class="row">
-        <div class="six columns">
-          <label for="employeeIdInput">Employee ID</label>
-          <input class="u-full-width" type="number" placeholder="00000000" id="employeeIdInput">
-        </div>
-        <div class="six columns">
-          <label for="employeeTypeInput">Employee type</label>
-          <select class="u-full-width" id="employeeTypeInput">
-            <option value="Option 1">Permanent, full-time</option>
-            <option value="Option 2">Permanent, part-time</option>
-            <option value="Option 3">Contractor</option>
-          </select>
-        </div>
+      <div class="row" style="text-align: center">
+        <label for="employeeIdInput">Employee ID</label>
+        <input type="number" placeholder="00000000" id="employeeIdInput">
       </div>
-      <input class="button-primary" type="button" value="Search" onclick="doResults()">
+      <div class="row" style="text-align: center">
+        <input class="button-primary" type="button" value="Search" onclick="doResults()">
+      </div>
     </form>
 
     <div id="resultsDiv" style="display: none">
@@ -66,6 +58,7 @@
           <thead>
             <tr>
               <th>Employee ID</th>
+              <th>Job role</th>
               <th>Hours worked</th>
               <th>Hours saved</th>
             </tr>
@@ -73,6 +66,7 @@
           <tbody>
             <tr>
               <td id="employeeId"></td>
+              <td id="jobRole"></td>
               <td id="hoursWorked"></td>
               <td id="hoursSaved"></td>
             </tr>
